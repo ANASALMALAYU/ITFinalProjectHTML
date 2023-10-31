@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anas's Industries</title>
+    <link rel="icon" type="image/x-icon" href="c:\Users\anoos\Downloads\442px-Emblem_of_Saudi_Arabia.svg.png">
+    <link rel="stylesheet" type="text/css" href="FinalProject.css">
+    
+    <!--This is javascript function-->
+    <script>
+        // Function to handle smooth scrolling when a menu item is clicked
+        function smoothScroll(target) {
+            const element = document.querySelector(target);
+            window.scroll({
+                behavior: 'smooth',
+                left: 0,
+                top: element.offsetTop
+            });
+        }
+    
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get all the anchor elements in the navigation menu
+            const menuLinks = document.querySelectorAll("nav ul li a");
+    
+            // Attach a click event listener to each menu item
+            menuLinks.forEach(function (link) {
+                link.addEventListener("click", function (event) {
+                    // Prevent the default behavior of jumping to the anchor
+                    event.preventDefault();
+    
+                    // Get the target section's ID from the href attribute
+                    const target = this.getAttribute("href");
+    
+                    // Call the smoothScroll function to scroll to the target section
+                    smoothScroll(target);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    
+    <section id="home">
+        <h1>Welcome to Anas's site</h1>
+        <p>Your source for military and defense solutions</p>
+        <!--<form action="/action_page.php">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="anas"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="almalayu"><br><br>
+            <input type="submit" value="Submit">
+        </form> -->
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Learn about our organization and mission.</p>
+        <!-- Add information about Anas's Industries here -->
+        <p>Inspired from Saudi Vision 2030. Located at Makkah and we are hoping to reach all of the world</p>
+    </section>
+    
+    
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>Explore our range of military and defense services.</p>
+        <!-- Add service descriptions here -->
+        <p>Military and defense services perform a range of functions, including:</p>
+
+        <ol>
+            <li>National Defense: Protecting the country from external threats and maintaining sovereignty.</li>
+            <li><b>Homeland Security:</b> Defending against internal threats, such as terrorism and border security.</li>
+            <li>Peacekeeping: Participating in international peacekeeping missions to promote stability.</li>
+            <li>Disaster Response: Assisting in natural disaster relief and recovery efforts.</li>
+            <li>Research and Development: Advancing military technology and strategy.</li>
+            <li>Personnel: Military and defense services are staffed by a mix of career soldiers, conscripts, and reservists. Personnel are trained in various roles, from combat troops to support staff, engineers, medical professionals, and more.</li>
+        </ol>
+        <!--<p>
+
+Equipment and Technology:
+
+Weapons and Equipment: Modern militaries use a wide array of weapons, from firearms to advanced missile systems and drones.
+Communication: Advanced communication systems ensure coordination and information sharing across branches and units.
+Cybersecurity: Protecting digital infrastructure and networks is crucial for modern defense.
+Surveillance and Intelligence: Military intelligence agencies gather information and monitor threats.
+</p> -->
+    </section>
+
+    
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us for inquiries and support.</p>
+        <!-- Add contact information and a contact form here -->
+        <p><a href="mailto:anasalmalayu@gmail.com">Contact me</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; Anas's Industries. All rights reserved</p>
+    </footer>
+</body>
+</html>
+
